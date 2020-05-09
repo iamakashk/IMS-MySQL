@@ -1,0 +1,20 @@
+#LOGIN TABLE / USERX TABLE
+#Description: All the user details will be inside this table
+CREATE TABLE `userx` (
+  `USR_USERID` varchar(10) NOT NULL,
+  `USR_NAME` varchar(50) DEFAULT NULL,
+  `USR_LOGGED_IN_FLG` varchar(1) DEFAULT NULL,
+  `USR_DELETED_FLG` varchar(1) DEFAULT 'N',
+  `USR_TS_CREATED` timestamp NOT NULL,
+  `USR_CREATED_BY` varchar(10) DEFAULT NULL,
+  `USR_TS_EDITED` timestamp NULL DEFAULT NULL,
+  `USR_EDITED_BY` varchar(10) DEFAULT NULL,
+  `USR_SHORT_NAME` varchar(5) DEFAULT NULL,
+  `USR_EMAIL` varchar(50) DEFAULT NULL,
+  `USR_MOBILE_NO1` varchar(20) DEFAULT NULL,
+  `USR_PASSWORD` varchar(100) DEFAULT NULL,
+  `USR_LAST_PWD_CHG_DATE` timestamp NULL DEFAULT NULL,
+  `USR_PWD_CHANGE_FLG` varchar(1) DEFAULT 'N',
+  `USR_PWD_VALID_DAYS` smallint(6) DEFAULT '0',
+  PRIMARY KEY (`USR_USERID`)
+)
